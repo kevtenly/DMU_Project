@@ -1,0 +1,11 @@
+#############################################
+April 18, 2024
+#############################################
+
+1) Obstacle defined while solving HJB is 0.1m bigger than the actual obstacle.
+This could be an issue since I am assuming min_safe_distance_from_obstacle as 0.0 in all the configs.
+So, collision check in ESPOMDP is different from the collision check while solving the HJB.  
+
+2) Thanks to the OrderedDict change Ben recommended in DESPOT, I can now replicate the results
+from OMAK on my system as well. This is HUGE help with debugging issues in the experiment
+pipeline output. 
